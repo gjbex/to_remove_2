@@ -11,9 +11,9 @@ def say_bye(name):
     print(f'bye {name}!')
 
 args = utils.handle_cla()
-if args.msg == 'hello':
+if args.type == 'hello':
     say_hello(args.name)
-elif args.msg == 'bye':
+elif args.type == 'bye':
     say_bye(args.name)
 else:
     print('unknown message')
